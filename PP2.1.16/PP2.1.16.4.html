@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="600px" height="500px" style="border:1px solid brown;"></canvas>
+    <script>
+         function getRandomColor(){
+            return Math.floor(Math.random()*256).toString(16)
+        }
+        let Rectangle = function(width,height){
+            this.w = width;
+            this.h = height;
+            this.color = "#" + getRandomColor()+ getRandomColor()+ getRandomColor();
+            this.setW = function(width){
+                this.w = width;
+            }
+            this.setH = function(height){
+                this.h = height;
+            }
+            this.getSchunhat = function(){
+                return this.w*this.h;
+            }
+            this.getDchunhat = function(){
+                return (this.h+this.w)*2;
+            }
+        }
+        let chunhat = new Rectangle(300,200);
+        chunhat.setW(Math.random() * window.innerWidth);
+        chunhat.setH(Math.random() * window.innerWidth);
+        document.write("<br>Diện tích hình chữ nhật là "+chunhat.getSchunhat())
+        document.write("<br>Chu vi hình chữ nhật là "+chunhat.getDchunhat())
+        let canvas = document.getElementById("myCanvas").getContext("2d");
+        canvas.fillStyle = chunhat.color;
+        canvas.fillRect(0,0,chunhat.w,chunhat.h)
+    </script>
+</body>
+</html>

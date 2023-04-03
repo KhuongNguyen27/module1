@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Battery{
+            constructor(int){
+                this.enegry = int; 
+            }
+            setEnergy(int){
+                this.enegry += int
+            }
+            getEnergy(){
+                return this.enegry
+            }
+            decreaseEnergy(){
+                this.enegry--
+            }
+        }
+        class FlashLamp{
+            constructor(status,battery){
+                this.status = status;
+                this.battery = battery;
+            }
+            setBattery(battery){
+                this.battery = battery
+            }
+            getBatteryinfo(battery){
+                
+            }
+            light(){
+                if(this.status && this.battery>0)
+                    return "light on"
+                else
+                    return "light off"
+            }
+            turnOn(){
+                this.status = true;
+            }
+            turnOff(){
+                this.status = false;
+            }
+            
+            }
+    </script>
+</body>
+</html>

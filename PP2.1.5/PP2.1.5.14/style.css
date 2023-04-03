@@ -1,0 +1,21 @@
+body{
+    font-family: 'Times New Roman';
+}
+th{
+    color: blue;
+    text-align: right;
+    width: 170px ;
+}
+td{
+    text-align: left; 
+    color: red
+}
+tr{
+    line-height: 150%;
+}  
+input{
+    border-top: 2px inset #b1154a;
+    border-left: 2px inset #b1154a;
+    border-right: 1px inset #eae1e4;
+    border-bottom: 1px inset #eae1e4;
+}

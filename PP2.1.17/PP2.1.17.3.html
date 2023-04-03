@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class human {
+            constructor(name,gender,weight){
+                this.name = name;
+                this.gender = gender;
+                this.weight = weight;
+            }
+            setGender(gender){
+                this.gender = gender;
+            }
+            say(string){
+                this.string = string;
+                return this.name + " say: " + this.string;
+            }
+            setWeight(weight){
+                this.weight += weight;
+            }
+            getWeight(){
+                return this.weight
+            }
+        }
+        class Apple {
+            constructor(weight=10){
+                this.weight = weight; 
+            }
+            getWeight(){
+                this.weight-=1;
+                return this.weight
+            }
+            isEmpty(){
+                if(this.weight<=0)
+                    return false;
+                else    
+                    return true;
+            }
+            }
+        let adam = new human("Adam","Male",58)
+        let eva = new human("Eva","Female",48)
+        console.log(adam);
+        let apple = new Apple();
+        while(apple.isEmpty() == true ){
+            document.write(adam.name +" ăn táo<br>")
+            adam.setWeight(1);
+            document.write("Quả táo còn: " + apple.getWeight()+" đơn vị<br>")
+            document.write("Cân nặng của Adam: "+adam.getWeight(1)+" đơn vị<br>")
+            document.write(eva.name +" ăn táo<br>")
+            eva.setWeight(1);
+            document.write("Quả táo còn: " + apple.getWeight()+" đơn vị<br>")
+            document.write("Cân nặng của Eva: "+eva.getWeight(1)+" đơn vị<br><br><br>")    
+        }
+        // document.write(eva.say("hi<br>"))
+        // document.write(adam.say("nặng vãi"))
+            </script>
+</body>
+</html>

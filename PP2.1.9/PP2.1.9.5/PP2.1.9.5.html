@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="progress.js"></script>
+    <b>Calculator</b><br>
+    <table>
+        <tr><input type="text" id="input"></tr>
+        <tr>
+            <td><button type="submit" onclick="progress(1);">1</button></td>
+            <td><button type="submit" onclick="progress(2);">2</button></td>
+            <td><button type="submit" onclick="progress(3);">3</button></td>
+            <td><button type="submit" onclick="progress('+');">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="submit" onclick="progress(4);">4</button></td>
+            <td><button type="submit" onclick="progress(5);">5</button></td>
+            <td><button type="submit" onclick="progress(6);">6</button></td>
+            <td><button type="submit" onclick="progress('-');">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="submit" onclick="progress(7);">7</button></td>
+            <td><button type="submit" onclick="progress(8);">8</button></td>
+            <td><button type="submit" onclick="progress(9);">9</button></td>
+            <td><button type="submit" onclick="progress('*');">*</button></td>
+        </tr>
+        <tr>
+            <td><button type="submit" onclick="reset();">AC</button></td>
+            <td><button type="submit" onclick="progress(0);">0</button></td>
+            <td><button type="submit" onclick="result();">=</button></td>
+            <td><button type="submit" onclick="progress('/');">/</button></td>
+        </tr>
+    </table>
+</body>
+</html>

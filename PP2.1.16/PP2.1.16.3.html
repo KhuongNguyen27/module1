@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
+    <script>
+        function Cricles(x,y,radius){
+            this.x = x;
+            this.y= y;
+            this.radius = radius;
+        }
+        function getRandomColor(){
+            return Math.floor(Math.random()*256).toString(16)
+        }
+        function paintCircles(){
+            var canvas = document.getElementById("myCanvas").getContext("2d");
+            var radius = Math.random()*250;
+            var x = Math.random() * window.innerWidth;
+            var y = Math.random() * window.innerHeight;
+            Cricles(x,y,radius);
+            canvas.beginPath();
+            canvas.arc(this.x,this.y,this.radius,0,2*Math.PI)
+            canvas.fillStyle = "#"+getRandomColor()+getRandomColor()+getRandomColor();
+            canvas.fill();
+        }
+            for(let i=0;i<=30;i++)
+                paintCircles();
+     </script>
+</body>
+</html>

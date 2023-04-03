@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="process.js"></script>
+    <h1>Luyện tập tạo và sử dụng hàm 02</h1>
+    <br>
+    <b>Bình phương số: </b>
+    <input type="text" id="input01" onchange="check01();" placeholder="Number">
+    <br>
+    <b id="binhphuong"></b>
+
+    <br><br><hr>    
+    <b>Tính chu vi, diện tích hình tròn: </b>
+    <input type="text" id="input02" onchange="check02();" placeholder="Bán kính hình tròn">
+    <br>
+    <b id="chuvi"></b>
+    <br>
+    <b id="bankinh"></b>
+
+    <br><br><hr>
+    <b>Tính giai thừa: </b>
+    <input type="text" id="input03" onchange="check03();" placeholder="Number!">
+    <br>
+    <b id="giaithua"></b>
+
+    <br><br><hr>
+    <b>Kiểm tra kí tự nhập vào: </b>
+    <input type="text" id="input04" onchange="check04();" placeholder="String">
+    <br>
+    <b id="checkTF"></b>
+
+    <br><br><hr>
+    <b>Nhập 3 số nguyên, tìm min: </b>
+    <input type="text" id="num1" placeholder="Number 1" class="min">
+    <input type="text" id="num2" placeholder="Number 2" class="min">
+    <input type="text" id="num3" placeholder="Number 3" class="min">
+    <button type="submit" onclick="check05();">Kiểm tra</button>
+    <br>
+    <b id="min3so"></b>
+    
+    <br><br><hr>
+    <b>Kiểm tra số nguyên A</b>
+    <input type="text" id="intA" onchange="check06();" placeholder="Integer A">
+    <b id="intReturn"></b>
+
+    <br><br><hr>
+    <b>Đổi giá trị 2 số a, b: </b>
+    <input type="text" id="numA" placeholder="Number 1" class="min">
+    <input type="text" id="numB" placeholder="Number 2" class="min">
+    <button type="submit" onclick="check07();">Đổi giá trị</button>
+    <br>
+    <b id="doi2so"></b>
+
+    <br><br><hr>
+    <b>Nhập mảng bất kì, đảo ngược mảng</b>
+    <input type="text" id="addAray" placeholder="Phần tử mảng">
+    <button type="submit" onclick="addArray();">Thêm</button>
+    <button type="submit" onclick="displayArray()">Hiển Thị</button>
+    <br>
+    <b>Đảo ngược mảng: </b><br>
+    <b id="converterArray"></b>
+
+    <br><br><hr>
+    <b>Kiểm tra xuất hiện kí tự</b>
+    <input type="text" id="stringDad" placeholder="Chuỗi kiểm tra">
+    <input type="text" id="stringSon" placeholder="Kí tự kiểm tra" class="min">
+    <button type="submit" onclick="findWord();">Kiểm tra</button>
+    <br>
+    <b id="findWord"></b>
+    
+    <br><br>
+    <h1>Cảm ơn mọi người đã ghé thăm!</h1>
+</body>
+</html>

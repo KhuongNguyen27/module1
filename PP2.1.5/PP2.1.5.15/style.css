@@ -1,0 +1,25 @@
+  fieldset{
+    font-family: Arial;
+    border: 0px;
+  }
+  legend{
+    font-weight: 600;
+  }
+  input{
+    border-top: 3px solid #573943;
+    border-left: 1px inset #e59eb6;
+    border-right: 1px inset #e59eb6;
+    border-bottom: 1px inset #e59eb6;
+  }
+  table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+  tr:nth-child(odd) {
+    background-color: #dddddd; 
+    }

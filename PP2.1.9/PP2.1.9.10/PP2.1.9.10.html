@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="process.js"></script>
+    <h1>Cấu trúc điều kiện 02</h1>
+    <b>C sang F: </b>
+    <input type="text" id="input01" onchange="CsangF();" placeholder="Độ C">
+    <br><br>
+    <b id="result01"></b>
+
+
+    <br><br><hr>
+    <b>Meter sang Feet: </b>
+    <input type="text" id="input02" onchange="MsangF();" placeholder="Meter">
+    <br>
+    <b id="result02"></b>
+
+    <br><br><hr>
+    <b>Nhập a tính diện tích hình vuông: </b>
+    <input type="text" id="input03" onchange="Shinhvuong();" placeholder="Cạnh a">
+    <br>
+    <b id=  "result03"></b>
+
+    <br><br><hr>
+    <b>Nhập a,b tính diện tích hình chữ nhật: </b>
+    <input type="text" id="input04" placeholder="Cạnh a">
+    <input type="text" id="input05" placeholder="Cạnh b">
+    <button type="submit" onclick="Schunhat();">Tính</button>
+    <br>
+    <b id="result04"></b>
+    
+    <br><br><hr>
+    <b>Nhập a,b tính diện tích tam giác: </b>
+    <input type="text" id="input06" placeholder="Cạnh kề">
+    <input type="text" id="input07" placeholder="Chiều cao">
+    <button type="submit" onclick="Stamgiac();">Tính</button>
+    <br>
+    <b id="result05"></b>
+
+    <br><br><hr>
+    <b>Nhập a,b tính phương trình bậc 1 ax+b=0: </b>
+    <input type="text" id="input08" placeholder="Nhập a">
+    <input type="text" id="input09" placeholder="Nhập b">
+    <button type="submit" onclick="Ptb1();">Tính</button>
+    <br>
+    <b id="result06"></b>
+
+    <br><br><hr>
+    <b>Nhập a,b tính phương trình bậc 2 ax^2+bx+c=0: </b>
+    <input type="text" id="input10" placeholder="Nhập a">
+    <input type="text" id="input11" placeholder="Nhập b">
+    <input type="text" id="input12" placeholder="Nhập c">
+    <button type="submit" onclick="Ptb2();">Tính</button>
+    <br>
+    <b id="result07"></b>
+
+    <br><br><hr>
+    <b>Nhập kiểm tra độ tuổi : </b>
+    <input type="text" id="input13" placeholder="Nhập tuổi">
+    <button type="submit" onclick="checkOld();">Tính</button>
+    <br>
+    <b id="result08"></b>
+
+    <br><br><hr>
+    <b>Nhập 3 cạnh tam giác a,b,c  </b>
+    <input type="text" id="input14" placeholder="Nhập a">
+    <input type="text" id="input15" placeholder="Nhập b">
+    <input type="text" id="input16" placeholder="Nhập c">
+    <button type="submit" onclick="checkTamgiac();">Tính</button>
+    <br>
+    <b id="result09"></b>
+
+    <br><br><hr>
+    <b>Nhập kWh tính tiền điện : </b>
+    <input type="text" id="input17" placeholder="Nhập kWh">
+    <button type="submit" onclick="tiendien();">Tính</button>
+    <br>
+    <b id="result10"></b>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuyển Đổi Tiền Tệ</title>
+  </head>
+  <body>
+    <script>
+      function ChangeMoney() {
+        let Amount = document.getElementById("Amount").value;
+        let lang1= document.getElementById("lang1").value;
+        let lang2= document.getElementById("lang2").value;
+        let kq;
+        if (lang1 == "USD" && lang2 == "VND") {
+            kq= Amount*23000;
+        } else if (lang1 == "VND" && lang2 == "USD") {
+            kq= Amount/23000;
+        } else if (lang1 == lang2) {
+          return document.write("Đơn vị chuyển đổi bằng nhau");
+        }
+        document.getElementById("kq").innerHTML = kq;
+
+      }
+    </script>
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              <label>Amount</label>
+            </th>
+            <th>From</th>
+            <th>To</th>
+            <th></th>
+
+          </tr>
+          <tr>
+            <td>
+              <input type="text" value="" id="Amount" />
+            </td>
+            <td>
+              <select  id="lang1">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+               
+              </select>
+            </td>
+            <td>
+              <select  id="lang2">
+                  <option value="VND">VND</option>
+                  <option value="USD">USD</option>
+              </select>
+            </td>
+            <td>
+                <td><button onclick="ChangeMoney()">Change</button></td>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="kq">Return</p>
+  </body>
+</html>

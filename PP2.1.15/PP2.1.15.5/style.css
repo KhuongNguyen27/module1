@@ -1,0 +1,16 @@
+button{
+    background-color: rgb(104, 250, 104);
+    font-size: 20px;
+}
+input{
+    font-size: 20px;
+}
+form{
+    text-align: center;
+    background-color: aqua;
+    height: 70px;
+    width: 400px;
+}
+table{
+    font-size: 20px;
+}

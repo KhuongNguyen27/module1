@@ -1,0 +1,18 @@
+.background{
+    width: 1280px;
+    height: 640px;
+    /* background-color: skyblue; */
+    background-image: url(image/background.png);
+}
+td{
+    width: 122px;
+    height: 105px;
+}
+td.footer{
+    height: 85px;
+    border: 4px solid pink;
+}
+b{
+    color: whitesmoke;
+    font-size: 30px;
+}

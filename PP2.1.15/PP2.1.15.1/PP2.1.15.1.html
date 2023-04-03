@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function isPrime(value){
+        if(value<=3)
+          return true;
+        let n = parseInt(Math.sqrt(value));
+        let ting =0;
+        for(let j= 2;j<=n;j++)
+            if(value%j == 0)
+                ting+=1;
+        if(ting!=0)
+            return false;
+        else
+            return true;
+    }  
+    let i=2;
+    while(i<=10000)
+    {  
+        let check = true;
+        check = isPrime(i);    
+        if (check)
+            document.write(i+" ");
+        i++;
+    }
+    </script>
+</body>
+</html>

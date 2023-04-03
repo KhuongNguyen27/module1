@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function xu_ly(){
+        let result = "";
+            weight=document.getElementById("weight").value;
+            height=document.getElementById("height").value;
+            bmi= weight/(height*height)
+        if(bmi<18.5)
+            result="Underweight";
+            else if(bmi>=18.5 && bmi<25)
+                result="Normal";
+                else if(bmi>=25 && bmi<30)
+                    result="Overweigth";
+            else
+                result="Obese";
+        document.getElementById("result").innerHTML = "BMI = " + bmi + ". You are " + "<b>"+ result + "</b>";
+        }
+    </script>
+    <h1>BMI - Check your body</h1>
+    <label for="weight" >Enter u weight (kg):</label> 
+    <input type="text" id="weight"><br><br>
+    <label for="weight" >Enter u height (m) :</label> 
+    <input type="text" id="height"><br><br>
+    <br>
+    <button onclick="xu_ly()">Check</button>
+    <p id="result"></p>
+</body> 
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let i=0;
+    function findMin(array){
+        let min=array[0];
+        if(array.length == 0)
+            return min = -1;
+        for(i=0;i<array.length-1;i++){
+            min = Math.min(min,array[i+1]); 
+        }
+        return min 
+    }
+    let arr1= [3, 5, 1, 8, -3, 7, 8];
+    let arr2= [7, 12, 6, 9, 20, 56, 89];
+    let arr3= [];
+    let arr4= [0, 0, 0, 0, 0, 0];
+    console.log(findMin(arr1));
+    console.log(findMin(arr2));
+    console.log(findMin(arr3));
+    console.log(findMin(arr4));
+    </script>
+
+</body>
+</html>

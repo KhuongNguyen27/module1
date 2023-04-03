@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Calculator(){
+        document.getElementById('Cong').addEventListener('click',function(){
+            var test1= parseInt(document.getElementById('1').value)
+                test2= parseInt(document.getElementById('2').value)
+            var Result=test1+test2;
+            document.writeln("Tong 2 so la: "+Result);
+        })
+        document.getElementById('Tru').addEventListener('click',function(){
+            var test1= parseInt(document.getElementById('1').value)
+                test2= parseInt(document.getElementById('2').value)
+            var Result=test1-test2;
+            document.writeln("Hieu 2 so la: "+Result);
+        })
+        document.getElementById('Nhan').addEventListener('click',function(){
+            var test1= parseInt(document.getElementById('1').value)
+                test2= parseInt(document.getElementById('2').value)
+            var Result=test1*test2;
+            document.writeln("Tich 2 so la: "+Result);
+        })
+        document.getElementById('Chia').addEventListener('click',function(){
+            var test1= parseInt(document.getElementById('1').value)
+                test2= parseInt(document.getElementById('2').value)
+            var Result=test1/test2;
+            document.writeln("Thuong 2 so la: "+Result);
+        })}
+    </script>
+    <input type="text" id="1">
+    <input type="text" id="2"><br>
+    <button id="Cong">Cộng</button>
+    <button id="Tru">Trừ</button>
+    <button id="Nhan">Nhân</button>
+    <button id="Chia">Chia</button>
+    <script>
+        
+    </script>
+</body>
+</html>

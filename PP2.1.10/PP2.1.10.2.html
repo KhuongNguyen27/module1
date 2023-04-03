@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <script>
+        let i,total=0;
+        while (true)
+            {
+                i = prompt("Nhập vào các số cộng. Nhập -1 để thoát");
+                i=  parseInt(i);
+                if (i == -1)
+                    break;
+                else
+                    total+=i;
+            }
+        document.write("Tổng các số vừa nhập là "+total);
+        i=1;
+        while(i<20){
+            document.write("<hr width = " + i + "%>");
+            i++;
+        }            
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function Converser(value){
+        let result=0;
+        let input = document.getElementById("input").value;
+        if(value==1)
+            result = input*0.305 + " meters";
+        else
+            result = input*3.279 + " foot";
+        document.getElementById("result").innerHTML=result;
+    }
+    </script>    
+        <input type="text" id="input">
+        <button type="submit" onclick="Converser(1);">Feet</button>
+        <button type="submit" onclick="Converser(2);">Meters</button>
+        <br>
+        <b id="result"></b>
+</body>
+</html>
