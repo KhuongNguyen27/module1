@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="process.js"></script>
+    <h1>Bài thi kết thúc Module 1</h1>
+    <b>Tính điểm thi trung bình các môn</b>
+    <button type="submit" onclick="findAvg();">Tính</button><br>
+    <b>Điểm các môn </b> <b id="arrayExam"></b><br>
+    <b>Điểm thi trung bình bằng: </b> <b id="Dtb"></b>
+
+    <br><hr><br>
+    <b>Nhập vào số nguyên X và số nguyên vị trí Index: </b>
+    <input type="text" id="value" placeholder="Số nguyên X">
+    <input type="text" id="index" placeholder="Số nguyên Index">
+    <button type="submit" onclick="checkIndex();">Kiểm tra</button><br>
+    <b>Mảng sau khi kiểm tra: </b>
+    <b id="resultIndex"></b>
+
+    <br><hr><br>
+    <b>Nhập vào số nguyên X: </b>
+    <input type="text" id="totalId" placeholder="Số nguyên X" onchange="total();"><br>
+    <b>Tổng từ 0 đến </b><b id="numberTotal"></b><b> = </b><b id="total"></b>
+
+    <br><hr><br>
+    <b>Hình chữ nhật được vẽ trên Canvas:</b><br>
+    <canvas id="myCanvas" width="500px" height="400px" style="border: 1px solid brown"></canvas>
+    <br>
+    <button type="submit" onclick="Paint();">Paint</button>
+</body>
+</html>
