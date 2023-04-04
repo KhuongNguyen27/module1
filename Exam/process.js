@@ -53,16 +53,16 @@ class Rectangle{
         this.color = null;
     }
     setX(x){
-        this.x = x;
+        this.x = x*Math.random()*300;
     }
     setY(y){
-        this.y = y;
+        this.y = y*Math.random()*200;
     }
     setWidth(){
-        this.width = Math.random()*window.innerWidth;
+        this.width = Math.random()*500;
     }
     setHeight(){
-        this.height = Math.random()*window.innerHeight;
+        this.height = Math.random()*400;
     }
     setColor(){ 
         return Math.floor(Math.random()*256).toString(16)
@@ -77,18 +77,22 @@ class Rectangle{
         return this.y
     }
     getHeight(){
-        return this.setHeight()
+        return this.height
     }
     getWidth(){
-        return this.setWidth()
+        return this.width
     }
 }
 function Paint(){
     let canvas = document.getElementById("myCanvas").getContext("2d");
     let paint = new Rectangle();
-    paint.setX=0;
-    paint.setY=0;
-    canvas.fillStyle = paint.getColor;
-    console.log(paint.getColor());
-    canvas.fillRect(paint.getX(),paint.getY(),paint.getWidth,paint.getHeight);
+    canvas.clearRect(0,0,500,400)
+    paint.setX(1);
+    paint.setY(1);
+    paint.setHeight();
+    paint.setWidth();
+    canvas.fillStyle = paint.getColor();
+    canvas.fillRect(paint.getX(),paint.getY(),paint.getWidth(),paint.getHeight());
+    document.getElementById("width").innerHTML = parseInt(paint.getWidth());
+    document.getElementById("height").innerHTML = parseInt(paint.getHeight());
 } 
